@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ürün Detayı</title>
+  <style>
+    body {
+      font-family: "Cormorant Garamond", serif;
+      background-color: #fffaf6;
+      margin: 0;
+    }
+
+    /* === Üst kısım (logo + menü) === */
+    header {
+      border: 1px solid rgba(61, 61, 61, 0.432);
+      background-color: #363636;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      border: none;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+      background-color: #c0c0c0;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    nav a {
+      border: 1px solid black;
+      border-radius: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: black;
+      background-color: #d3d3d3;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #b0b0b0;
+    }
+
+    /* === Sayfa düzeni === */
+    .urun-detay {
+      display: flex;
+      max-width: 1100px;
+      width: 100%;
+      margin: 50px auto;
+      padding: 0 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* Sol: slayt */
+    .urun-slayt {
+      position: relative;
+      flex: 1.2;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .urun-slayt img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .urun-slayt img.active {
+      opacity: 1;
+    }
+
+    .slayt-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .slayt-btn:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    /* Sağ: ürün bilgisi */
+    .urun-bilgi {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .urun-bilgi h2 {
+      margin: 0;
+      font-size: 32px;
+      color: #333;
+    }
+
+    .urun-bilgi .aciklama {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .fiyat {
+      font-size: 24px;
+      color: #27ae60;
+      font-weight: bold;
+    }
+
+    .iletisim {
+      margin-top: 20px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .geri {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #d3d3d3;
+      border-radius: 20px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid #333;
+      width: fit-content;
+    }
+
+    .geri:hover {
+      background-color: #b0b0b0;
+    }
+
+    @media (max-width: 900px) {
+      .urun-detay {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .urun-slayt img { height: 350px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst logo ve menü -->
+  <header>
+    <div class="logo">Öksüzer Design</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="index.html#urunler">Katalog</a>
+      <a href="#">Salon Tasarımları</a>
+    </nav>
+  </header>
+
+  <!-- Ürün detay alanı -->
+  <div class="urun-detay">
+    <div class="urun-slayt" id="urunSlayt">
+      <!-- Görseller JS ile gelecek -->
+      <button class="slayt-btn prev">&#10094;</button>
+      <button class="slayt-btn next">&#10095;</button>
+    </div>
+
+    <div class="urun-bilgi">
+      <h2 id="urunBaslik"></h2>
+      <div class="aciklama" id="urunAciklama"></div>
+      <div class="fiyat" id="urunFiyat"></div>
+
+      <div class="iletisim">
+        <strong>İletişim:</strong><br>
+        📞 0(555) 123 45 67<br>
+        💬 WhatsApp: 0(555) 765 43 21<br>
+        🏠 Mağaza Adresi: Ankara / Siteler<br>
+        ✉️ info@oksuzerdesign.com
+      </div>
+
+      <a href="index.html#urunler" class="geri">← Ürün Kataloğuna Dön</a>
+    </div>
+  </div>
+
+  <!-- Veriler bu dosyadan geliyor -->
+  <script src="urunler.js"></script>
+
+  <script>
+    // URL'den id al
+    const params = new URLSearchParams(window.location.search);
+    const urunId = params.get("id");
+    const urun = urunler[urunId];
+
+    if (!urun) {
+      document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;'>Ürün bulunamadı.</h2>";
+      throw new Error("Ürün bulunamadı.");
+    }
+
+    // Sayfa bilgilerini doldur
+    document.getElementById("urunBaslik").textContent = urun.baslik;
+    document.getElementById("urunAciklama").textContent = urun.aciklama;
+    document.getElementById("urunFiyat").textContent = urun.fiyat;
+
+    // Slaytları oluştur
+    const slaytContainer = document.getElementById("urunSlayt");
+    urun.resimler.forEach((src, i) => {
+      const img = document.createElement("img");
+      img.src = src;
+      if (i === 0) img.classList.add("active");
+      slaytContainer.insertBefore(img, slaytContainer.querySelector(".prev"));
+    });
+
+    const slides = document.querySelectorAll("#urunSlayt img");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach((img, idx) => img.classList.toggle("active", idx === i));
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+  </script>
+</body>
+</html>
