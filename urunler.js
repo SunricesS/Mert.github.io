@@ -41,7 +41,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk3.jpeg",
+             "Resimler/Koltuk/koltuk3.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -54,7 +54,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk4.jpeg",
+             "Resimler/Koltuk/koltuk4.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -67,7 +67,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk5.jpeg",
+             "Resimler/Koltuk/koltuk5.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -80,7 +80,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk6.jpeg",
+             "Resimler/Koltuk/koltuk6.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -93,7 +93,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk7.jpeg",
+             "Resimler/Koltuk/koltuk7.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -106,7 +106,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk8.jpeg",
+             "Resimler/Koltuk/koltuk8.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -119,7 +119,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk9.jpeg",
+             "Resimler/Koltuk/koltuk9.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -132,7 +132,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk10.jpeg",
+             "Resimler/Koltuk/koltuk10.jpeg",
              "Resimler/babyhornet.png"
         ]
     }
@@ -325,3 +325,4 @@ const urunler = {
     }
   },
 };
+
