@@ -378,6 +378,43 @@ footer {
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
+/* === RENK SEÇENEKLERİ BUTONLARI === */
+.renk-secenekleri {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.renk-baslik {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.renk-btn {
+    padding: 8px 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.renk-btn:hover {
+    background-color: #eee;
+}
+
+.renk-btn.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
 /* === MOBİL UYUMLULUK (Responsive) === */
 @media (max-width: 900px) {
     nav {

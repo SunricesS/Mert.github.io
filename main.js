@@ -11,17 +11,33 @@ document.addEventListener("DOMContentLoaded", () => {
         Object.keys(urunler).forEach(key => {
             const urun = urunler[key];
 
-            // Ürünün kategorisine göre HTML'deki doğru kutuyu bul (örn: id="koltuk" içindeki .urun-grid)
-            // Not: urunler.js içindeki kategori ismi ile HTML ID'si birebir aynı olmalı (küçük harf)
+            // Ürünün kategorisine göre HTML'deki doğru kutuyu bul
             const hedefContainer = document.querySelector(`#${urun.kategori} .urun-grid`);
 
-            // Eğer HTML'de böyle bir alan yoksa (örn: yanlış kategori ismi), hata verme geç
+            // Eğer HTML'de böyle bir alan yoksa geç
             if (!hedefContainer) return;
+
+            // --- GÖRSEL SEÇİM MANTIĞI (YENİ KISIM) ---
+            let kapakResmi = "";
+
+            // Eğer ürün "resimler" (eski stil) kullanıyorsa
+            if (urun.resimler && urun.resimler.length > 0) {
+                kapakResmi = urun.resimler[0];
+            } 
+            // Eğer ürün "renkler" (yeni stil) kullanıyorsa
+            else if (urun.renkler) {
+                // Renklerin ilkini bul (örn: "Siyah")
+                const ilkRenkIsmi = Object.keys(urun.renkler)[0];
+                // O rengin ilk resmini al
+                if (ilkRenkIsmi && urun.renkler[ilkRenkIsmi].length > 0) {
+                    kapakResmi = urun.renkler[ilkRenkIsmi][0];
+                }
+            }
 
             // Kart HTML şablonunu oluştur
             const urunHTML = `
                 <a href="urun-detay.html?id=${key}" class="urun" style="text-decoration: none;">
-                    <img src="${urun.resimler[0]}" alt="${urun.baslik}">
+                    <img src="${kapakResmi}" alt="${urun.baslik}">
                     <h4>${urun.baslik}</h4>
                     <p class="fiyat">${urun.fiyat}</p>
                 </a>

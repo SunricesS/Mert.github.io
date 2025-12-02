@@ -2,271 +2,326 @@
 //-----------------------Koltuklar-----------------------
 const urunler = {
   koltuk1: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Koltuk Takımı 1",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk1.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk1.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk2: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Yıkama Seti",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk2.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Siyah": [
+            "Resimler/Koltuk/koltuk2.jpeg",
+            "Resimler/babyhornet.png"
+        ],
+        "Gri": [
+            "Resimler/Koltuk/koltuk2.jpeg", 
+            "Resimler/Koltuk/koltuk2.jpeg"
+        ],
+        "Kırmızı": [
+            "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk3: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Borukol Berber Koltuğu",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk3.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk3.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk4: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Lamakol Berber Koltuğu",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk4.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk4.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk5: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Lamakol Berber Koltuğu 2",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk5.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk5.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk6: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Telli Kesim Koltuğu",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk6.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk6.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk7: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Lüks Berber Koltuğu",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk7.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk7.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk8: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Lüks Berber Koltuğu 2",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk8.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk8.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk9: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Lüks Berber Koltuğu 3",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk9.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk9.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   koltuk10: {
-    baslik: "Koltuk Takımı2",
-    fiyat: "₺8.500",
+    baslik: "Mersedes Berber Koltuğu",
+    fiyat: "Açıklama",
     aciklama: "Deneme açıklaması",
     kategori:"koltuk",
-    resimler: [
-      "Resimler/Koltuk/koltuk10.jpeg",
-      "Resimler/babyhornet.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Koltuk/Koltuk10.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
 
   //-----------------------Aksesuar-----------------------
 
   aksesuar1: {
-    baslik: "Dolap",
-    fiyat: "₺7500",
+    baslik: "Boya Laboratuvarı",
+    fiyat: "Açıklama",
     aciklama: "Dolap",
     kategori:"aksesuar",
-    resimler: [
-      "Resimler/Aksesuar/tezgah1.jpeg",
-      "Resimler/entrance.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Aksesuar/tezgah1.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   aksesuar2: {
-    baslik: "Dolap",
-    fiyat: "₺7500",
+    baslik: "Banka Kasa",
+    fiyat: "Açıklama",
     aciklama: "Dolap",
     kategori:"aksesuar",
-    resimler: [
-       "Resimler/Aksesuar/tezgah2.jpeg",
-      "Resimler/entrance.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Aksesuar/tezgah2.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   //-----------------------Salonlar-----------------------
 
   salon1: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 1",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon1.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon1.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon2: {
-    baslik: "Salon Takımı",
-    fiyat: "₺20.000",
+    baslik: "Salon Takımı 2",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon2.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon2.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon3: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 3",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon3.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon3.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon4: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 4",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon4.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon4.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon5: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 5",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon5.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon5.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon6: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 6",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon6.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon6.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon7: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 7",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon7.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon7.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon8: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 8",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon8.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon8.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon9: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 9",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon9.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon9.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon10: {
-    baslik: "Salon Takımı",
-    fiyat: "₺15.000",
+    baslik: "Salon Takımı 10",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/salon10.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/salon10.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon11: {
-    baslik: "Salon Takımı",
-    fiyat: "₺1225.000",
+    baslik: "Salon Takımı 11",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/instasssalon1.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/instasssalon1.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 
   salon12: {
-    baslik: "Salon Takımı",
-    fiyat: "₺222.000",
+    baslik: "Salon Takımı 12",
+    fiyat: "Açıklama",
     aciklama: "Şık tasarımı ve dayanıklı malzemesiyle bu salon takımı, evinize modern bir hava katar.",
     kategori:"salon",
-    resimler: [
-      "Resimler/Salon/instasssalon2.jpeg",
-      "Resimler/babyhornetmom.png"
-    ]
+    renkler: {
+        "Standart": [
+             "Resimler/Salon/instasssalon2.jpeg",
+             "Resimler/babyhornet.png"
+        ]
+    }
   },
 };
