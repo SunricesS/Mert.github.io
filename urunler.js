@@ -119,7 +119,7 @@ const urunler = {
     kategori:"koltuk",
     renkler: {
         "Standart": [
-             "Resimler/Koltuk/Koltuk9.jpeg",
+             "Resimler/Koltuk/koltuk9.jpeg",
              "Resimler/babyhornet.png"
         ]
     }

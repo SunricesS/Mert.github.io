@@ -22,14 +22,12 @@ header {
     flex-wrap: wrap;
 }
 
-.logo {
-    border: none;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    background-color: #c0c0c0;
-    font-weight: bold;
-    color: black;
+
+
+.logo img {
+    width: 200px;       /* Genişlik tam istediğin gibi 200px olsun */
+    height: 60px;      /* Yükseklik tam istediğin gibi 100px olsun */
+    object-fit: contain; /* ÖNEMLİ: Resmi sündürmez, kutunun içine sığdırır */
 }
 
 nav {
