@@ -232,7 +232,6 @@ function anaSayfayiYukle() {
         }
     });
 
-    // Arama Kutusu Mantığı
     const aramaInput = document.getElementById('aramaInput');
     const aramaSonuclari = document.getElementById('aramaSonuclari');
     const tumKategoriler = document.getElementById('tum-kategoriler');
@@ -255,11 +254,16 @@ function anaSayfayiYukle() {
 
             Object.keys(urunler).forEach(key => {
                 const urun = urunler[key];
-                if (urun.baslik.toLowerCase().includes(kelime)) {
+
+                const arananKucuk = kelime;  
+                const urunBaslik = urun.baslik.toLowerCase();
+                const urunFiyat = urun.fiyat.toString().toLowerCase(); 
+
+                if (urunBaslik.includes(arananKucuk) || urunFiyat.includes(arananKucuk)) {
                     bulundu = true;
                     aramaSonuclari.innerHTML += `
                         <a href="urun-detay.html?id=${key}" class="urun" style="text-decoration: none;">
-                            <img src="${urun.resimler[0]}">
+                            <img src="${urun.kapakResmi}" alt="${urun.baslik}" onerror="this.src='Resimler/hata.png'">
                             <h4>${urun.baslik}</h4>
                             <p class="fiyat">${urun.fiyat}</p>
                         </a>
@@ -274,6 +278,19 @@ function anaSayfayiYukle() {
     // Ana Sayfa Büyük Slider Mantığı
     anaSliderMantigi();
 }
+
+const kategoriButonlari = document.querySelectorAll('.kategori-butonlar button');
+
+    kategoriButonlari.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const hedefId = btn.getAttribute('data-target');
+            const hedefBolum = document.getElementById(hedefId);
+
+            if (hedefBolum) {
+                hedefBolum.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
 
 function anaSliderMantigi() {
     const slides = document.querySelectorAll('.slayt > img'); // Sadece slayt class'ı altındaki resimler
